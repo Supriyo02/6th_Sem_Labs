@@ -53,6 +53,9 @@ sudo chmod +x infy.sh
 sh infy.sh
 #!/bin/bash
 while(true)
+
+sudo apt install stress
+sudo stress --cpu 2 --timeout 1000
 do
  echo "Inside loop"
 done
